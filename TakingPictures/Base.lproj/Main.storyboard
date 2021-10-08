@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TakingPictures" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Enr-oP-gau">
+                                <rect key="frame" x="30" y="790" width="354" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="GpH-Jw-SxH"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="didTapButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="fHD-Tz-OJg"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yZi-jY-mNQ">
+                                <rect key="frame" x="20" y="64" width="374" height="706"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BYr-Wf-sXg">
+                                <rect key="frame" x="20" y="64" width="374" height="706"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Enr-oP-gau" secondAttribute="bottom" constant="20" id="2ki-im-ekN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Enr-oP-gau" secondAttribute="trailing" constant="30" id="2m2-mZ-fh2"/>
+                            <constraint firstItem="BYr-Wf-sXg" firstAttribute="bottom" secondItem="yZi-jY-mNQ" secondAttribute="bottom" id="7kF-TL-JoF"/>
+                            <constraint firstItem="BYr-Wf-sXg" firstAttribute="leading" secondItem="yZi-jY-mNQ" secondAttribute="leading" id="M5v-xS-ySi"/>
+                            <constraint firstItem="BYr-Wf-sXg" firstAttribute="top" secondItem="yZi-jY-mNQ" secondAttribute="top" id="Vj2-wX-psf"/>
+                            <constraint firstItem="BYr-Wf-sXg" firstAttribute="trailing" secondItem="yZi-jY-mNQ" secondAttribute="trailing" id="WQj-QT-a9b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yZi-jY-mNQ" secondAttribute="trailing" constant="20" id="epJ-D4-7CQ"/>
+                            <constraint firstItem="Enr-oP-gau" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="jz1-F1-oz1"/>
+                            <constraint firstItem="yZi-jY-mNQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="khh-Tp-HSX"/>
+                            <constraint firstItem="yZi-jY-mNQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="tkw-RW-DGG"/>
+                            <constraint firstItem="Enr-oP-gau" firstAttribute="top" secondItem="yZi-jY-mNQ" secondAttribute="bottom" constant="20" id="zyK-n1-zOg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="Enr-oP-gau" id="ftG-qr-EzY"/>
+                        <outlet property="imageView" destination="yZi-jY-mNQ" id="Zfq-ef-hRw"/>
+                        <outlet property="imageView2" destination="BYr-Wf-sXg" id="icG-Aj-LS6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="98"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
